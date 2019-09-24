@@ -1,0 +1,6 @@
+1 git clone + ssh
+2 vue init webpack + 项目名称
+3 安装 node-sass(安装不成功的时候，卸载原来的，https://www.cnblogs.com/blucesun/p/11463426.html)
+4 使用mint-ui swiper 的时候，要给父元素设置宽高，不然会显示不出来
+5 使用 iconfont 图标库的时候，要注意给iconfont 设置样式，最好按照官网提示来，可能是mint-ui组件库
+的使用，限制了iconfont 的显示
