@@ -3,7 +3,7 @@
       <ul class="content">
         <li class="ul-li-view">
           <router-link
-            to="/"
+            to="/components/literary/index"
             class="link-a"
           >
             <span class="iconfont">&#xe602;</span>

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <mt-header title="FM85" fixed>
+    <mt-header title="文苑漫步" fixed>
       <router-link to="/" slot="left">
-         <!-- <mt-button icon="back"></mt-button> -->
+         <mt-button icon="back"></mt-button>
       </router-link>
     </mt-header>
   </div>

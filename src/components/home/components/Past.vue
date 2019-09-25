@@ -6,7 +6,7 @@
             <img :src="array.imgurl" alt="" height="261px" width="320px">
             <div class="desc"> {{array.content}} </div>
         </div>
-        <div class="title"> {{array.time}} </div>
+        <div class="title"> {{array.time}} | {{array.mingcheng}} </div>
     </div>
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
   }
   .item {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 38px;
       border: 1px solid #ddd;
       .content {
           position: relative;
