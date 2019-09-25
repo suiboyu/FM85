@@ -12,7 +12,7 @@
         </li>
         <li class="ul-li-view">
           <router-link
-            to="/"
+            to="/components/tinylife/index"
             class="link-a"
           >
             <span class="iconfont">&#xe6b1;</span>

@@ -2,12 +2,14 @@
   <div>
     <literary-header></literary-header>
     <literary-int></literary-int>
+    <LiterarySubmit></LiterarySubmit>
   </div>
 </template>
 
 <script>
 import LiteraryHeader from './components/Header'
 import LiteraryInt from './components/Introduce'
+import LiterarySubmit from './components/Submit'
 export default {
   name: 'literary',
   data () {
@@ -16,7 +18,8 @@ export default {
   },
   components: {
     LiteraryHeader,
-    LiteraryInt
+    LiteraryInt,
+    LiterarySubmit
   }
 }
 </script>
