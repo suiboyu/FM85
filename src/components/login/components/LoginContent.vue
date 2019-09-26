@@ -1,107 +1,100 @@
 <template>
   <div class="container">
-    <div class="login-top">
-      <div class=""></div>
 
-      <mt-actionsheet
-        :actions= "data"
-        v-model="sheetVisible">
-      </mt-actionsheet>
-      <button class="profile-photo" @click="actionSheet">
-      <label class="mint-button-text">设置你的头像</label>
-      </button>
-      <span class="span-title">设置你的呢称</span>
-      <div class="install"></div>
-    </div>
+   <LoginTop></LoginTop>
+
     <div class="mid">
-        <div class="title">我的投稿</div>
-        <div class="content"></div>
+        <div class="title">
+          <span>我的投稿</span>
+        </div>
+        <div class="content" v-for="item in items" :key="item.id">
+          <span>投稿日期：{{ item.date }} | 投稿栏目：{{ item.cloumn }}</span>
+          <p> {{item.desc}} </p>
+          <span class="un">播出于：{{ item.time }}</span>
+        </div>
+
         <div class="title">我的歌曲</div>
-        <div class="content"></div>
+        <div class="content" v-for="list in lists" :key="list.id">
+          <h4>点歌人：{{ list.person }}</h4>
+          <h4>祝福对象：{{ list.obj }}</h4>
+          <h4>播出时间：{{ list.date }}</h4>
+          <h4>歌曲名称：{{ list.name }}</h4>
+          <h4>祝福语：{{ list.wish }}</h4>
+        </div>
     </div>
-    <div class="bottom">本作品尚未完成，尽情期待</div>
+    <div class="bottom"></div>
   </div>
 </template>
 
 <script>
+import LoginTop from './LoginTop'
 export default {
   name: 'LoginContent',
+  props: {
+    items: Array,
+    lists: Array
+  },
+  components: {
+    LoginTop
+  },
   data () {
     return {
-      data: [{
-        name: '拍照',
-        method: this.getCamera
-      }, {
-        name: '从相册中选择',
-        method: this.getLibrary
-      }],
-      sheetVisible: false
-    }
-  },
-  methods: {
-    actionSheet: function () {
-      this.sheetVisible = true
-    },
-    getCamera: function () {
-    //   console.log('打开照相机')
-    },
-    getLibrary: function () {
-    //   console.log('打开相册')
     }
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
     margin-top: 45px;
-}
-.login-top {
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    height: 80px;
-    background-color: #e6e3e38f;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-.profile-photo {
-    width: 58px;
-    height: 58px;
-    background-color: #ddd;
-    border-radius: 50%;
-    color: #a6a2a2;
-}
-.span-title {
-    position: absolute;
-    left: 82px;
-    top: 28px;
-}
-.install {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    width: 40px;
-    height: 40px;
-    /* background: url(../../../assets/download.png) no-repeat; */
-    background-size: 30px;
-}
-.mid {
+   .mid {
     box-sizing: border-box;
     width: 100%;
     height: 240px;
     margin-top: 10px;
-}
-.title {
-    height: 20px;
-    background-color: #afb1b3;
-}
-.content {
-    height: 90px;
-    background-color: #dedee3a3;
-}
-.bottom {
+    .title {
+      height: 25px;
+      background-color: #afb1b3;
+      text-align: left;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+    .content {
+      // height: 120px;
+      background-color: #dedee3a3;
+      padding: 4px;
+      box-sizing: border-box;
+      margin-bottom: 8px;
+      span {
+        color: #9e9999;
+        border-bottom: 1px solid #9e9999;
+      }
+      p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+        color: #8f8c8c;
+      }
+      .un {
+        border-top: 1px solid #9e9999;
+        border-bottom: 0 !important;
+        padding-top: 4px;
+        box-sizing: border-box;
+      }
+      h4 {
+        margin-bottom: 4px;
+        background-color: #dadada;
+        padding: 4px;
+        box-sizing: border-box;
+        &:nth-child(5) {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .bottom {
     margin-top: 270px;
     color: #ccc
+  }
 }
 </style>

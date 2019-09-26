@@ -36,8 +36,8 @@ export default {
   },
   methods: {
     handleBtnClick () {
-      const cellphone = '15375984256'
-      const passwordNumber = '406103'
+      const cellphone = '1'
+      const passwordNumber = '2'
 
       let inputOne = this.inputOne
       let inputTwo = this.inputTwo
@@ -82,28 +82,28 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .Right {
     margin-top: 40px;
-}
-.right-top {
-    width: 220px;
-    height: 200px;
-    margin: 180px auto;
-}
-.input-one {
-    width: 210px;
-    height: 30px;
-    border: 1px solid #ccc;
-    margin-top: 10px;
-    padding-left: 5px;
-    color: #ccc;
-}
-.login-btn {
-    margin-top: 10px;
-}
-.login-hint {
-    font-size: 12px;
-    color: #ccc;
+    .right-top {
+       width: 220px;
+       height: 200px;
+       margin: 180px auto;
+       .input-one {
+         width: 210px;
+         height: 30px;
+         border: 1px solid #ccc;
+         margin-top: 10px;
+         padding-left: 5px;
+         color: #ccc;
+         }
+        .login-btn {
+          margin-top: 10px;
+      }
+      .login-hint {
+         font-size: 12px;
+         color: #ccc;
+      }
+   }
 }
 </style>
