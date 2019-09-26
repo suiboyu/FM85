@@ -3,6 +3,7 @@
     <SongHeader></SongHeader>
     <SongRecommend :lists="Recommend"></SongRecommend>
     <ChooseSong></ChooseSong>
+    <SongExplain></SongExplain>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import SongHeader from './components/Header'
 import SongRecommend from './components/Recommend'
 import ChooseSong from './components/ChooseSong'
+import SongExplain from './components/Explain'
 import axios from 'axios'
 export default {
   name: 'song',
@@ -21,7 +23,8 @@ export default {
   components: {
     SongHeader,
     SongRecommend,
-    ChooseSong
+    ChooseSong,
+    SongExplain
   },
   mounted () {
     this.getHomeInfo()

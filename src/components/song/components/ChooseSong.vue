@@ -1,6 +1,8 @@
 <template>
   <div class="content">
-    <span class="iconfont">&#xe6b2;</span>
+    <router-link to="/components/choosesong/index">
+      <span class="iconfont">&#xe6b2;</span>
+    </router-link>
   </div>
 </template>
 
@@ -23,6 +25,7 @@ export default {
       font-style: normal;
       text-align: center;
       padding: 3px;
+      color: #000;
     }
 }
 </style>

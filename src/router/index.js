@@ -6,6 +6,7 @@ import tinylife from '@/components/tinylife/index.vue'
 import english from '@/components/english/index.vue'
 import song from '@/components/song/index.vue'
 import login from '@/components/login/index.vue'
+import choosesong from '@/components/choosesong/index.vue'
 
 Vue.use(Router)
 
@@ -35,6 +36,10 @@ export default new Router({
       path: '/components/song/index',
       name: 'song',
       component: song
+    }, {
+      path: '/components/choosesong/index',
+      name: 'choosesong',
+      component: choosesong
     }
   ]
 })
