@@ -4,6 +4,7 @@ import home from '@/components/home/home.vue'
 import literary from '@/components/literary/index.vue'
 import tinylife from '@/components/tinylife/index.vue'
 import english from '@/components/english/index.vue'
+import song from '@/components/song/index.vue'
 import login from '@/components/login/index.vue'
 
 Vue.use(Router)
@@ -30,6 +31,10 @@ export default new Router({
       path: '/components/login/index',
       name: 'login',
       component: login
+    }, {
+      path: '/components/song/index',
+      name: 'song',
+      component: song
     }
   ]
 })

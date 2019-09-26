@@ -8,7 +8,7 @@
         </mt-tab-item>
       </router-link>
 
-      <router-link to="/" class="tabbar-a">
+      <router-link to="/components/song/index" class="tabbar-a">
         <mt-tab-item id="点歌">
           <span class="iconfont">&#xe6b2;</span>
         </mt-tab-item>
