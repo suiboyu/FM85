@@ -14,7 +14,7 @@
         </mt-tab-item>
       </router-link>
 
-      <router-link to="/" class="tabbar-a">
+      <router-link to="/components/login/index" class="tabbar-a">
         <mt-tab-item id="我的">
           <span class="iconfont">&#xe600;</span>
         </mt-tab-item>

@@ -21,7 +21,7 @@
         </li>
         <li class="ul-li-view">
           <router-link
-            to="/"
+            to="/components/english/index"
             class="link-a"
           >
             <span class="iconfont">&#xe652;</span>
