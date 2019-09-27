@@ -36,8 +36,8 @@ export default {
   },
   methods: {
     handleBtnClick () {
-      const cellphone = '1'
-      const passwordNumber = '2'
+      const cellphone = '15375984256'
+      const passwordNumber = '406103'
 
       let inputOne = this.inputOne
       let inputTwo = this.inputTwo

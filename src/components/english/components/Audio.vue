@@ -3,7 +3,7 @@
     <h4>Daily Recommendation</h4>
     <audio
       class="audio"
-      src="../../../../static/imgs/sky.mp3"
+      src="../../../../static/imgs/Take.mp3"
       controls
       hidden="true"
     ></audio>
