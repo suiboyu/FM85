@@ -1,13 +1,19 @@
 <template>
   <div>
       <h4>往日稿件</h4>
-    <div class="item" v-for="array in news" :key="array.id">
+    <router-link
+    class="item"
+    tag="div"
+    v-for="array in news"
+    :key="array.id"
+    :to="'/detail/' + array.id"
+  >
         <div class="content">
             <img :src="array.imgurl" alt="" height="261px" width="320px">
             <div class="desc"> {{array.content}} </div>
         </div>
         <div class="title"> {{array.time}} | {{array.mingcheng}} </div>
-    </div>
+    </router-link>
   </div>
 </template>
 

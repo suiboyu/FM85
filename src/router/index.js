@@ -7,6 +7,7 @@ import english from '@/components/english/index.vue'
 import song from '@/components/song/index.vue'
 import login from '@/components/login/index.vue'
 import choosesong from '@/components/choosesong/index.vue'
+import detail from '@/components/detail/Detail.vue'
 
 Vue.use(Router)
 
@@ -40,6 +41,10 @@ export default new Router({
       path: '/components/choosesong/index',
       name: 'choosesong',
       component: choosesong
+    }, {
+      path: '/Detail/:id',
+      name: 'detail',
+      component: detail
     }
   ]
 })
