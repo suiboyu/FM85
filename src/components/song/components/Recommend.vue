@@ -1,44 +1,23 @@
 <template>
   <div class="content">
     <h4>每天推荐好歌</h4>
-    <div class="item" v-for="list in lists" :key="list.id">
-        <div class="item1">
+    <router-link
+      tag="div"
+      class="item"
+      v-for="(list, index) in lists"
+      :key="list.id"
+      :to="'/particulars/' + list.id"
+    >
+        <div :class="'item' + index">
             <div class="img">
-                <img :src="list.image1" alt="" width="90%" height="100">
+                <img :src="list.image" alt="" width="90%" height="100px">
                 <div class="desc">
-                    <h3> {{list.singer1}} </h3>
-                    <p> {{list.song1}} </p>
+                    <h3> {{list.singer}} </h3>
+                    <p> {{list.song}} </p>
                 </div>
             </div>
         </div>
-        <div class="item2">
-            <div class="img">
-                <img :src="list.image2" alt="" width="92%" height="100">
-                <div class="desc">
-                    <h3> {{list.singer2}} </h3>
-                    <p> {{list.song2}} </p>
-                </div>
-            </div>
-        </div>
-        <div class="item3">
-            <div class="img">
-                <img :src="list.image3" alt="" width="90%" height="100">
-                <div class="desc">
-                    <h3> {{list.singer3}} </h3>
-                    <p> {{list.song3}} </p>
-                </div>
-            </div>
-        </div>
-        <div class="item4">
-            <div class="img">
-                <img :src="list.image4" alt="" width="90%" height="100">
-                <div class="desc">
-                    <h3> {{list.singer4}} </h3>
-                    <p> {{list.song4}} </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -55,54 +34,32 @@ export default {
 @import "../../../assets/css/layout.scss";
 .content {
     margin-top: 43px;
-    height: 490px;
+    height: 440px;
     h4 {
         text-align: center;
         padding: 6px;
         background-color: #eee;
         border-bottom: 1px solid #ddd;
         color:  #939292;
+        margin-bottom: 10px;
     }
-    .item {
-        margin-top: 20px;
-        position: relative;
-        .item1 {
-            @include site;
-            .img {
-                .desc {
-                    @include sty;
-                }
-            }
+    .item:nth-child(even) {
+        float: left;
+        @include item;
+        .desc {
+          @include sty;
+          left: 38%;
         }
-        .item2 {
-            @include site;
-            right: -36px;
-            top: 120px;
-            .img {
-                .desc {
-                    @include sty;
-                }
-            }
+    }
+    .item:nth-child(odd) {
+        float: right;
+        @include item;
+        img {
+            float: right;
         }
-        .item3 {
-            @include site;
-            left: 0;
-            top: 240px;
-            .img {
-                .desc {
-                    @include sty;
-                }
-            }
-        }
-        .item4 {
-            @include site;
-            right: -36px;
-            top: 360px;
-            .img {
-                .desc {
-                    @include sty;
-                }
-            }
+        .desc {
+          @include sty;
+          right: 40%;
         }
     }
 }

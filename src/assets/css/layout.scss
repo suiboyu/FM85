@@ -7,19 +7,17 @@
 }
 
 @mixin sty() {
-  width: 92%;
-  height: 100px;
-  position: absolute;
-  top: 1px;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
-  color: #fff;
+  font-size: 20px;
   text-align: center;
-  font-size: 25px;
-  line-height: 40px;
+  line-height: 30px;
+  top: 25%;
+  color: #fff;
+  position: absolute;
 }
 
-@mixin site() {
-  position: absolute;
+@mixin item() {
   width: 90%;
   height: 100px;
+  margin-bottom: 10px;
+  position: relative;
 }

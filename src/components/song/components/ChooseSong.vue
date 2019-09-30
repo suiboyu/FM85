@@ -15,7 +15,7 @@ export default {
 <style lang="scss" scoped>
 .content {
     margin-top: 40px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     // background-color: red;
     border-radius: 6px;
     .iconfont {

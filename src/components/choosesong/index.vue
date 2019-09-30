@@ -10,6 +10,9 @@ import ChooseHeader from './components/Header'
 import Choose from './components/Choose'
 export default {
   name: 'choosesong',
+  props: {
+    'id': String
+  },
   data () {
     return {
     }

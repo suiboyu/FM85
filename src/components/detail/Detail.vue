@@ -43,6 +43,7 @@ export default {
         this.Detaillist = data.Detaillist
         this.newstitle = data.newstitle
         this.newsctx = data.newsctx
+        console.log(this.Detaillist)
       }
     }
   }

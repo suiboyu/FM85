@@ -8,6 +8,7 @@ import song from '@/components/song/index.vue'
 import login from '@/components/login/index.vue'
 import choosesong from '@/components/choosesong/index.vue'
 import detail from '@/components/detail/Detail.vue'
+import particulars from '@/components/particulars/index.vue'
 
 Vue.use(Router)
 
@@ -45,6 +46,10 @@ export default new Router({
       path: '/Detail/:id',
       name: 'detail',
       component: detail
+    }, {
+      path: '/particulars/:id',
+      name: 'particulars',
+      component: particulars
     }
   ]
 })

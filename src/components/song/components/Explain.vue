@@ -49,7 +49,7 @@ export default {
 .content {
     width: 100%;
     height: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
     position: relative;
     .remianer {
         position: absolute;
