@@ -33,4 +33,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - 每一个投稿的栏目里面会有相对应的推荐板块。里面会推荐相应的文章
 - 点歌里面会有推荐歌曲。
 ### 未实现的功能：
-- 登录功能不会做，只能在效果上面大概模拟。
+- 登录功能不会做，只能在效果上面大概模拟。# FM85
