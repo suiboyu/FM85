@@ -35,4 +35,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ### 未实现的功能：
 - 登录功能不会做，只能在效果上面大概模拟。# FM85
 ### 图片
-### ![image] (https://gitee.com/suiboyu/FM85/blob/master/login.PNG)
+### ![image](https://gitee.com/suiboyu/FM85/blob/master/login.PNG)
